@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import { FaSearchengin } from "react-icons/fa";
 import { BsMicFill } from "react-icons/bs";
-import queryString from "query-string";
 import "./MainPage.css";
 
 const MainPage = (props) => {
@@ -16,7 +15,7 @@ const MainPage = (props) => {
         <div className="mainpage">
             <div className="mainpage__container">
                 <div className="google__logo">
-                    <img src="/assets/googlelogo.gif" alt="GOOGLE"/>
+                    <img src="/assets/googlelogo.gif" alt="Google"/>
                 </div>
                 <form className="search__form" onSubmit={GoogleSearchResult}>
                     <input type="text" className="search__input" onChange={(e)=> setSearch(e.target.value)} value={search}/>
@@ -32,6 +31,6 @@ const MainPage = (props) => {
             </div>
         </div>
     )
-}
+};
 
-export default MainPage
+export default MainPage;

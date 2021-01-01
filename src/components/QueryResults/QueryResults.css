@@ -1,0 +1,31 @@
+.QueryResults {
+  margin: 20px 0;
+  width: 700px;
+}
+.QueryResults__information {
+  color: silver;
+  font-weight: normal;
+  font-size: 14px;
+}
+.QueryResults__details {
+  margin-top: 25px;
+}
+.QueryResults__link {
+  margin-bottom: 5px;
+}
+.QueryResults__link a {
+  color: #3c4043;
+  text-decoration: none;
+}
+.QueryResults__title {
+  margin-bottom: 10px;
+}
+.QueryResults__title a {
+  font-size: 20px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+.show__description {
+  color: #3c4043;
+  font-size: 14px;
+}
