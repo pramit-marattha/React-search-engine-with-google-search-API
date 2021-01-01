@@ -22,6 +22,9 @@ const MainPage = (props) => {
                     <div className="search__group">
                         <input className="search__btn" type="submit" value="Google Search"/>
                     </div>
+                    <div className="search__group__feelinglucky">
+                        <input className="search__feelinglucky__btn" type="submit" value="I'm Feeling Lucky"/>
+                    </div>
                     <FaSearchengin className="search__icon"/>
                     <BsMicFill className="mic__icon"/>
                 </form>
