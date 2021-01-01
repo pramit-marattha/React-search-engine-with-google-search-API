@@ -1,0 +1,25 @@
+name: ReactSearchEngine
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: [14.15.3]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Packages
+      run: npm install
+    - name: Deploy to GH Pages
+      run: |
+        git config --global user.email pramitmarattha5497@gmail.com
+        git config --global user.name pramit-marattha
+        git remote set-url origin https://${{secrets.PERSONAL_ACCESS_TOKEN}}@github.com/pramit-marattha/React-search-engine-with-google-search-API.git
+        npm run deploy
