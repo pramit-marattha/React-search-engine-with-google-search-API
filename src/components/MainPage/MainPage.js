@@ -7,6 +7,8 @@ const MainPage = () => {
 
     const [search,setSearch] = useState("");
 
+    const SearchResult = e => {};
+
     return (
         <div className="mainpage">
             <div className="mainpage__container">
