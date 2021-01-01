@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { FaSearchengin } from "react-icons/fa";
 import { BsMicFill } from "react-icons/bs";
+import queryString from "query-string";
 import "./MainPage.css";
 
 const MainPage = (props) => {
